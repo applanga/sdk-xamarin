@@ -81,10 +81,12 @@ Applanga.UploadStringsFromResClass(typeof(AppResources));
 
 ### Methods:
 
-Applanga.GetString(defaultValue, key, params);
+string Applanga.GetString(string defaultValue,string key, params);
 
-Applanga.TakeScreenshotWithTag(tag);
+void Applanga.TakeScreenshotWithTag(string tag);
 
-Applanga.EnableDraftMode();
+void Applanga.EnableDraftMode();
 
-Applanga.DisableDraftMode();
+void Applanga.DisableDraftMode();
+
+bool Applanga.Setlanguage(string language)
