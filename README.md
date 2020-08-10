@@ -89,4 +89,4 @@ void Applanga.EnableDraftMode();
 
 void Applanga.DisableDraftMode();
 
-bool Applanga.Setlanguage(string language)
+bool Applanga.CaptureScreenshot(string language)
