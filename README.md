@@ -33,38 +33,15 @@
 
 ### Initialisation:
 
-The SDK should be initialised seperatly in your Android and iOS projects.
-
-Once the SDK is ready it will trigger a callback that you can use to populate your views or hide a loading screen etc...
-
-For android, you should call it from your MainActivity.cs file.
-
-Here is an example of how you could adapt the default android App launch to work with applanga init:
+The applanga ApplangaSDK needs to be initialised before any of its features are used. The best place to do this is in the constructor of your first page. For example here we init the sdk in the MainPage of my app:
 
 ```
-var myApp = new App();
-
-LoadApplication(myApp);
-
-ApplangaXamarinAndroid.Init(this,(result) =>
+public MainPage()
 {
-    ((MainPage)myApp.MainPage).ApplangaInitComplete();
-});
+    Applanga.Init(InitializeComponent);
+}
 ```
-Note: ANdroid init requires the activity to be passed.
 
-For iOS you should call init from your AppDelegate.cs file, like so
-
-```
-var myApp = new App();
-
-LoadApplication(myApp);
-
-ApplangaXamarinIos.Init((result) => {
-	((MainPage)myApp.MainPage).ApplangaInitComplete();
-});
-```
-In both examples i am calling a method that i created in my MainPage which updates the texts of all my labels.
 
 ### Uploading Strings From Resources:
 
