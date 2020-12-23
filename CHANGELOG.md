@@ -5,7 +5,7 @@
 *Applanga Xamarin Documentation:* <https://github.com/applanga/sdk-xamarin/blob/master/README.md> 
 ***
 
-### Version 0.0.3 (23 Dec 2020)
+### Version 0.0.4 (23 Dec 2020)
 #### Added
 - Initial beta release
 
