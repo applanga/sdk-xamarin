@@ -1,6 +1,6 @@
 # Applanga SDK for Xamarin Localization: BETA
 ***
-*Version:* BETA 0.0.4
+*Version:* BETA 0.0.5
 
 *Website:* <https://www.applanga.com> 
 
